@@ -1,0 +1,56 @@
+<%- include("partials/header") %>
+
+<div class="container mt-5">
+  <h1>Register</h1>
+
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="card">
+        <div class="card-body">
+
+        
+          <form action="/register" method="POST">
+            <div class="form-group mb-3">
+              <label for="email">Email</label>
+              <input 
+                type="email" 
+                class="form-control" 
+                id="email" 
+                name="username" 
+                placeholder="Enter your email"
+                required >
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="password">Password</label>
+              <input 
+                type="password" 
+                class="form-control" 
+                id="password" 
+                name="password" 
+                placeholder="Enter your password"
+                required
+              >
+            </div>
+
+            <button type="submit" class="btn btn-dark">Register</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card social-block">
+        <div class="card-body text-center">
+          <a class="btn btn-danger btn-block mb-2" href="/auth/google" role="button">
+            <i class="fab fa-google"></i> Sign Up with Google
+          </a>
+          <a class="btn btn-primary btn-block" href="/login" role="button">
+            Already have an account? Login
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
